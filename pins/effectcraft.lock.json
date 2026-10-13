@@ -1,0 +1,15 @@
+{
+  "schema": "patio-artcraft-pin/v1",
+  "app": "effectcraft",
+  "version": "0.8.0",
+  "releaseUrl": "https://github.com/storytold/effectcraft/releases/tag/v0.8.0",
+  "asset": "effectcraft-cli-0.8.0-macos-universal.zip",
+  "assetUrl": "https://github.com/storytold/effectcraft/releases/download/v0.8.0/effectcraft-cli-0.8.0-macos-universal.zip",
+  "assetSha256": "a8b133b53f29c967690295cd6652dc894257b132424ee68b680bd09908aa3553",
+  "assetSha256Source": "Pinned GitHub release digest, independently matched to downloaded archive SHA-256 on 2026-10-12",
+  "cliName": "effectcraft-cli",
+  "cliSha256": "0400a498d7df3304cac0b466452568c4da0e03bee858fb9aa189392e39986db3",
+  "recordedBy": "Patio verification with GPT Astra",
+  "recordedOn": "2026-10-12",
+  "archiveMember": "effectcraft-cli-0.8.0-macos-universal/effectcraft-cli"
+}

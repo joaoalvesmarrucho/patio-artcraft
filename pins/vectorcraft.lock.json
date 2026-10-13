@@ -1,0 +1,14 @@
+{
+  "schema": "patio-artcraft-pin/v1",
+  "app": "vectorcraft",
+  "version": "0.9.0",
+  "releaseUrl": "https://github.com/storytold/vectorcraft/releases/tag/v0.9.0",
+  "asset": "vectorcraft-cli-0.9.0-macos-universal.zip",
+  "assetUrl": "https://github.com/storytold/vectorcraft/releases/download/v0.9.0/vectorcraft-cli-0.9.0-macos-universal.zip",
+  "assetSha256": "0e6fc38dd1ec432fb4a133ee1b1efe935d739f0fcb376b1925ee89473d55a61b",
+  "cliName": "vectorcraft-cli",
+  "cliSha256": "858ff14a56a30985e3a59e258460acd6611c1bf1baeb9b2a6b7e3a5872bb2d79",
+  "recordedBy": "GPT Astra (Codex) install on Jo\u00e3o's Mac; copied by Claude from Official_Route_Evidence.json",
+  "recordedOn": "2026-10-12",
+  "assetBytes": 69756789
+}

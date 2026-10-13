@@ -1,0 +1,1608 @@
+{
+  "schema": "patio-ledger/v2",
+  "plan": "S01 long shelf outline and presentation preview",
+  "note": "Latest successful run for each node from the verified example. Private paths replaced with portable placeholders. Timing covers local tool calls and checks only.",
+  "runs": [
+    {
+      "node": "outline",
+      "app": "vectorcraft",
+      "transport": "official-mcp",
+      "version": "0.9.0",
+      "cliSha256": "858ff14a56a30985e3a59e258460acd6611c1bf1baeb9b2a6b7e3a5872bb2d79",
+      "key": "1caa3ae540eb1d53a87d2b060f3765ca3ea64ec3a5ee4716a52473d67cb7c51a",
+      "revision": "A",
+      "inputs": {},
+      "started": "2026-10-12T19:29:04+08:00",
+      "status": "ok",
+      "log": [
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "file.new",
+            "params": {
+              "name": "S01 Long shelf REVIEW",
+              "width": "1450 mm",
+              "height": "170 mm",
+              "units": "Millimeters",
+              "backgroundContents": "white",
+              "artboards": 1
+            }
+          },
+          "result": {
+            "index": 1,
+            "previewMode": "default"
+          }
+        },
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "shape.rectangle",
+            "params": {
+              "x": 0,
+              "y": 0,
+              "width": 4110.236220472441,
+              "height": 481.8897637795276
+            }
+          },
+          "result": {
+            "id": 2
+          }
+        },
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "shape.rectangle",
+            "params": {
+              "x": 578.2677165354331,
+              "y": 0,
+              "width": 85.03937007874016,
+              "height": 85.03937007874016
+            }
+          },
+          "result": {
+            "id": 3
+          }
+        },
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "shape.rectangle",
+            "params": {
+              "x": 969.4488188976379,
+              "y": 0,
+              "width": 85.03937007874016,
+              "height": 85.03937007874016
+            }
+          },
+          "result": {
+            "id": 4
+          }
+        },
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "select.all",
+            "params": {}
+          },
+          "result": {
+            "count": 3
+          }
+        },
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "object.pathfinder.minusFront",
+            "params": {}
+          },
+          "result": {
+            "ids": [
+              5
+            ]
+          }
+        },
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "paint.setFill",
+            "params": {
+              "none": true
+            }
+          },
+          "result": null
+        },
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "paint.setStroke",
+            "params": {
+              "color": "#000000"
+            }
+          },
+          "result": null
+        },
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "stroke.set",
+            "params": {
+              "weight": 0.5
+            }
+          },
+          "result": null
+        },
+        {
+          "tool": "save_file",
+          "arguments": {
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft"
+          },
+          "result": {
+            "bytes": 26121,
+            "format": "vectorcraft",
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft",
+            "warnings": []
+          }
+        },
+        {
+          "tool": "export",
+          "arguments": {
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg",
+            "format": "svg",
+            "options": {
+              "decimals": 3,
+              "responsive": false,
+              "useArtboards": true
+            }
+          },
+          "result": {
+            "bytes": 521,
+            "format": "svg",
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg",
+            "warnings": []
+          }
+        },
+        {
+          "tool": "export",
+          "arguments": {
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW.dxf",
+            "format": "dxf",
+            "options": {
+              "unit": "Millimeters",
+              "scale": 1,
+              "version": "2013",
+              "useArtboards": true
+            }
+          },
+          "result": {
+            "bytes": 4917,
+            "format": "dxf",
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW.dxf",
+            "warnings": []
+          }
+        },
+        {
+          "operation": "normalize_svg_copy",
+          "source": "out/S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg",
+          "target": "out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+          "widthMm": 1450,
+          "heightMm": 170,
+          "rawPreserved": true
+        },
+        {
+          "tool": "open_file",
+          "arguments": {
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft"
+          },
+          "result": {
+            "format": "vectorcraft",
+            "index": 2,
+            "missingLinks": [],
+            "modifiedLinks": [],
+            "restored": false,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft",
+            "updatedLinks": [],
+            "warnings": []
+          }
+        },
+        {
+          "tool": "doc_inspect",
+          "arguments": {},
+          "result": {
+            "artboards": [
+              {
+                "height": 481.8897637795276,
+                "name": "Artboard 1",
+                "width": 4110.236220472441,
+                "x": 0.0,
+                "y": 0.0
+              }
+            ],
+            "colorMode": "Rgb",
+            "currentLayer": 1,
+            "dirty": false,
+            "history": [],
+            "isolation": null,
+            "layerRows": [],
+            "layers": [
+              {
+                "bounds": {
+                  "height": 481.8897637795276,
+                  "width": 4110.236220472441,
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "children": [
+                  {
+                    "anchors": 12,
+                    "bounds": {
+                      "height": 481.8897637795276,
+                      "width": 4110.236220472441,
+                      "x": 0.0,
+                      "y": 0.0
+                    },
+                    "closed": true,
+                    "fill": "None",
+                    "id": 5,
+                    "kind": "Path",
+                    "locked": false,
+                    "name": "<Path>",
+                    "stroke": "#000000",
+                    "strokeOptions": {
+                      "align": "center",
+                      "alignDashes": false,
+                      "arrowAlign": "extend",
+                      "cap": "butt",
+                      "dash": null,
+                      "dashOffset": 0.0,
+                      "endArrow": null,
+                      "gradientMode": "within",
+                      "join": "miter",
+                      "miterLimit": 10.0,
+                      "profile": "uniform",
+                      "startArrow": null,
+                      "widthPoints": null
+                    },
+                    "strokeWidth": 0.5,
+                    "visible": true
+                  }
+                ],
+                "clip": false,
+                "color": "#4f80ff",
+                "dimImages": null,
+                "id": 1,
+                "kind": "Layer",
+                "locked": false,
+                "name": "Layer 1",
+                "preview": true,
+                "printable": true,
+                "template": false,
+                "visible": true
+              }
+            ],
+            "objects": 2,
+            "paint": {
+              "appearanceItem": null,
+              "fill": "None",
+              "fillActive": false,
+              "stroke": "#000000",
+              "strokeWidth": 0.5
+            },
+            "pasteRemembersLayers": false,
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft",
+            "redo": [],
+            "revision": 1,
+            "selection": [],
+            "selectionBounds": null,
+            "selectionRotation": 0.0,
+            "target": null,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft",
+            "tool": "selection",
+            "units": "Millimeters"
+          }
+        },
+        {
+          "tool": "open_file",
+          "arguments": {
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg"
+          },
+          "result": {
+            "format": "svg",
+            "index": 3,
+            "missingLinks": [],
+            "modifiedLinks": [],
+            "restored": false,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg",
+            "updatedLinks": [],
+            "warnings": []
+          }
+        },
+        {
+          "tool": "doc_inspect",
+          "arguments": {},
+          "result": {
+            "artboards": [
+              {
+                "height": 481.8900146484375,
+                "name": "Artboard 1",
+                "width": 4110.23583984375,
+                "x": 0.0,
+                "y": 0.0
+              }
+            ],
+            "colorMode": "Rgb",
+            "currentLayer": 3,
+            "dirty": false,
+            "history": [],
+            "isolation": null,
+            "layerRows": [],
+            "layers": [
+              {
+                "bounds": {
+                  "height": 481.8900146484375,
+                  "width": 4110.23583984375,
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "children": [
+                  {
+                    "anchors": 12,
+                    "bounds": {
+                      "height": 481.8900146484375,
+                      "width": 4110.23583984375,
+                      "x": 0.0,
+                      "y": 0.0
+                    },
+                    "closed": true,
+                    "fill": "None",
+                    "id": 2,
+                    "kind": "Path",
+                    "locked": false,
+                    "name": "<Path>",
+                    "stroke": "#000000",
+                    "strokeOptions": {
+                      "align": "center",
+                      "alignDashes": false,
+                      "arrowAlign": "extend",
+                      "cap": "butt",
+                      "dash": null,
+                      "dashOffset": 0.0,
+                      "endArrow": null,
+                      "gradientMode": "within",
+                      "join": "miter",
+                      "miterLimit": 10.0,
+                      "profile": "uniform",
+                      "startArrow": null,
+                      "widthPoints": null
+                    },
+                    "strokeWidth": 0.5,
+                    "visible": true
+                  }
+                ],
+                "clip": false,
+                "color": "#4f80ff",
+                "dimImages": null,
+                "id": 3,
+                "kind": "Layer",
+                "locked": false,
+                "name": "Layer 1",
+                "preview": true,
+                "printable": true,
+                "template": false,
+                "visible": true
+              }
+            ],
+            "objects": 2,
+            "paint": {
+              "appearanceItem": null,
+              "fill": "None",
+              "fillActive": false,
+              "stroke": "#000000",
+              "strokeWidth": 0.5
+            },
+            "pasteRemembersLayers": false,
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg",
+            "redo": [],
+            "revision": 1,
+            "selection": [],
+            "selectionBounds": null,
+            "selectionRotation": 0.0,
+            "target": null,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg",
+            "tool": "selection",
+            "units": "Pixels"
+          }
+        },
+        {
+          "tool": "open_file",
+          "arguments": {
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW.dxf"
+          },
+          "result": {
+            "format": "dxf",
+            "index": 4,
+            "missingLinks": [],
+            "modifiedLinks": [],
+            "restored": false,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW.dxf",
+            "updatedLinks": [],
+            "warnings": []
+          }
+        },
+        {
+          "tool": "doc_inspect",
+          "arguments": {},
+          "result": {
+            "artboards": [
+              {
+                "height": 481.8897637795276,
+                "name": "Artboard 1",
+                "width": 4110.236220472441,
+                "x": 0.0,
+                "y": 0.0
+              }
+            ],
+            "colorMode": "Rgb",
+            "currentLayer": 3,
+            "dirty": false,
+            "history": [],
+            "isolation": null,
+            "layerRows": [],
+            "layers": [
+              {
+                "bounds": {
+                  "height": 481.8897637795276,
+                  "width": 4110.236220472441,
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "children": [
+                  {
+                    "anchors": 12,
+                    "bounds": {
+                      "height": 481.8897637795276,
+                      "width": 4110.236220472441,
+                      "x": 0.0,
+                      "y": 0.0
+                    },
+                    "closed": true,
+                    "fill": "None",
+                    "id": 2,
+                    "kind": "Path",
+                    "locked": false,
+                    "name": "<Path>",
+                    "stroke": "#000000",
+                    "strokeOptions": {
+                      "align": "center",
+                      "alignDashes": false,
+                      "arrowAlign": "extend",
+                      "cap": "butt",
+                      "dash": null,
+                      "dashOffset": 0.0,
+                      "endArrow": null,
+                      "gradientMode": "within",
+                      "join": "miter",
+                      "miterLimit": 10.0,
+                      "profile": "uniform",
+                      "startArrow": null,
+                      "widthPoints": null
+                    },
+                    "strokeWidth": 0.510236220472441,
+                    "visible": true
+                  }
+                ],
+                "clip": false,
+                "color": "#4f80ff",
+                "dimImages": null,
+                "id": 3,
+                "kind": "Layer",
+                "locked": false,
+                "name": "Layer 1",
+                "preview": true,
+                "printable": true,
+                "template": false,
+                "visible": true
+              }
+            ],
+            "objects": 2,
+            "paint": {
+              "appearanceItem": null,
+              "fill": "None",
+              "fillActive": false,
+              "stroke": "#000000",
+              "strokeWidth": 0.5
+            },
+            "pasteRemembersLayers": false,
+            "path": null,
+            "redo": [],
+            "revision": 1,
+            "selection": [],
+            "selectionBounds": null,
+            "selectionRotation": 0.0,
+            "target": null,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW.dxf",
+            "tool": "selection",
+            "units": "Millimeters"
+          }
+        },
+        {
+          "tool": "open_file",
+          "arguments": {
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg"
+          },
+          "result": {
+            "format": "svg",
+            "index": 5,
+            "missingLinks": [],
+            "modifiedLinks": [],
+            "restored": false,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+            "updatedLinks": [],
+            "warnings": []
+          }
+        },
+        {
+          "tool": "doc_inspect",
+          "arguments": {},
+          "result": {
+            "artboards": [
+              {
+                "height": 481.88978576660156,
+                "name": "Artboard 1",
+                "width": 4110.2362060546875,
+                "x": 0.0,
+                "y": 0.0
+              }
+            ],
+            "colorMode": "Rgb",
+            "currentLayer": 3,
+            "dirty": false,
+            "history": [],
+            "isolation": null,
+            "layerRows": [],
+            "layers": [
+              {
+                "bounds": {
+                  "height": 481.88978560416945,
+                  "width": 4110.2363168331285,
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "children": [
+                  {
+                    "anchors": 12,
+                    "bounds": {
+                      "height": 481.88978560416945,
+                      "width": 4110.2363168331285,
+                      "x": 0.0,
+                      "y": 0.0
+                    },
+                    "closed": true,
+                    "fill": "None",
+                    "id": 2,
+                    "kind": "Path",
+                    "locked": false,
+                    "name": "<Path>",
+                    "stroke": "#000000",
+                    "strokeOptions": {
+                      "align": "center",
+                      "alignDashes": false,
+                      "arrowAlign": "extend",
+                      "cap": "butt",
+                      "dash": null,
+                      "dashOffset": 0.0,
+                      "endArrow": null,
+                      "gradientMode": "within",
+                      "join": "miter",
+                      "miterLimit": 10.0,
+                      "profile": "uniform",
+                      "startArrow": null,
+                      "widthPoints": null
+                    },
+                    "strokeWidth": 0.4999999101862572,
+                    "visible": true
+                  }
+                ],
+                "clip": false,
+                "color": "#4f80ff",
+                "dimImages": null,
+                "id": 3,
+                "kind": "Layer",
+                "locked": false,
+                "name": "Layer 1",
+                "preview": true,
+                "printable": true,
+                "template": false,
+                "visible": true
+              }
+            ],
+            "objects": 2,
+            "paint": {
+              "appearanceItem": null,
+              "fill": "None",
+              "fillActive": false,
+              "stroke": "#000000",
+              "strokeWidth": 0.5
+            },
+            "pasteRemembersLayers": false,
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+            "redo": [],
+            "revision": 1,
+            "selection": [],
+            "selectionBounds": null,
+            "selectionRotation": 0.0,
+            "target": null,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+            "tool": "selection",
+            "units": "Millimeters"
+          }
+        }
+      ],
+      "checks": {
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft": {
+          "exists": true,
+          "reopens": true,
+          "open": {
+            "format": "vectorcraft",
+            "index": 2,
+            "missingLinks": [],
+            "modifiedLinks": [],
+            "restored": false,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft",
+            "updatedLinks": [],
+            "warnings": []
+          },
+          "document": {
+            "artboards": [
+              {
+                "height": 481.8897637795276,
+                "name": "Artboard 1",
+                "width": 4110.236220472441,
+                "x": 0.0,
+                "y": 0.0
+              }
+            ],
+            "colorMode": "Rgb",
+            "currentLayer": 1,
+            "dirty": false,
+            "history": [],
+            "isolation": null,
+            "layerRows": [],
+            "layers": [
+              {
+                "bounds": {
+                  "height": 481.8897637795276,
+                  "width": 4110.236220472441,
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "children": [
+                  {
+                    "anchors": 12,
+                    "bounds": {
+                      "height": 481.8897637795276,
+                      "width": 4110.236220472441,
+                      "x": 0.0,
+                      "y": 0.0
+                    },
+                    "closed": true,
+                    "fill": "None",
+                    "id": 5,
+                    "kind": "Path",
+                    "locked": false,
+                    "name": "<Path>",
+                    "stroke": "#000000",
+                    "strokeOptions": {
+                      "align": "center",
+                      "alignDashes": false,
+                      "arrowAlign": "extend",
+                      "cap": "butt",
+                      "dash": null,
+                      "dashOffset": 0.0,
+                      "endArrow": null,
+                      "gradientMode": "within",
+                      "join": "miter",
+                      "miterLimit": 10.0,
+                      "profile": "uniform",
+                      "startArrow": null,
+                      "widthPoints": null
+                    },
+                    "strokeWidth": 0.5,
+                    "visible": true
+                  }
+                ],
+                "clip": false,
+                "color": "#4f80ff",
+                "dimImages": null,
+                "id": 1,
+                "kind": "Layer",
+                "locked": false,
+                "name": "Layer 1",
+                "preview": true,
+                "printable": true,
+                "template": false,
+                "visible": true
+              }
+            ],
+            "objects": 2,
+            "paint": {
+              "appearanceItem": null,
+              "fill": "None",
+              "fillActive": false,
+              "stroke": "#000000",
+              "strokeWidth": 0.5
+            },
+            "pasteRemembersLayers": false,
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft",
+            "redo": [],
+            "revision": 1,
+            "selection": [],
+            "selectionBounds": null,
+            "selectionRotation": 0.0,
+            "target": null,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft",
+            "tool": "selection",
+            "units": "Millimeters"
+          }
+        },
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg": {
+          "exists": true,
+          "reopens": true,
+          "open": {
+            "format": "svg",
+            "index": 3,
+            "missingLinks": [],
+            "modifiedLinks": [],
+            "restored": false,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg",
+            "updatedLinks": [],
+            "warnings": []
+          },
+          "document": {
+            "artboards": [
+              {
+                "height": 481.8900146484375,
+                "name": "Artboard 1",
+                "width": 4110.23583984375,
+                "x": 0.0,
+                "y": 0.0
+              }
+            ],
+            "colorMode": "Rgb",
+            "currentLayer": 3,
+            "dirty": false,
+            "history": [],
+            "isolation": null,
+            "layerRows": [],
+            "layers": [
+              {
+                "bounds": {
+                  "height": 481.8900146484375,
+                  "width": 4110.23583984375,
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "children": [
+                  {
+                    "anchors": 12,
+                    "bounds": {
+                      "height": 481.8900146484375,
+                      "width": 4110.23583984375,
+                      "x": 0.0,
+                      "y": 0.0
+                    },
+                    "closed": true,
+                    "fill": "None",
+                    "id": 2,
+                    "kind": "Path",
+                    "locked": false,
+                    "name": "<Path>",
+                    "stroke": "#000000",
+                    "strokeOptions": {
+                      "align": "center",
+                      "alignDashes": false,
+                      "arrowAlign": "extend",
+                      "cap": "butt",
+                      "dash": null,
+                      "dashOffset": 0.0,
+                      "endArrow": null,
+                      "gradientMode": "within",
+                      "join": "miter",
+                      "miterLimit": 10.0,
+                      "profile": "uniform",
+                      "startArrow": null,
+                      "widthPoints": null
+                    },
+                    "strokeWidth": 0.5,
+                    "visible": true
+                  }
+                ],
+                "clip": false,
+                "color": "#4f80ff",
+                "dimImages": null,
+                "id": 3,
+                "kind": "Layer",
+                "locked": false,
+                "name": "Layer 1",
+                "preview": true,
+                "printable": true,
+                "template": false,
+                "visible": true
+              }
+            ],
+            "objects": 2,
+            "paint": {
+              "appearanceItem": null,
+              "fill": "None",
+              "fillActive": false,
+              "stroke": "#000000",
+              "strokeWidth": 0.5
+            },
+            "pasteRemembersLayers": false,
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg",
+            "redo": [],
+            "revision": 1,
+            "selection": [],
+            "selectionBounds": null,
+            "selectionRotation": 0.0,
+            "target": null,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg",
+            "tool": "selection",
+            "units": "Pixels"
+          }
+        },
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW.dxf": {
+          "exists": true,
+          "reopens": true,
+          "open": {
+            "format": "dxf",
+            "index": 4,
+            "missingLinks": [],
+            "modifiedLinks": [],
+            "restored": false,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW.dxf",
+            "updatedLinks": [],
+            "warnings": []
+          },
+          "document": {
+            "artboards": [
+              {
+                "height": 481.8897637795276,
+                "name": "Artboard 1",
+                "width": 4110.236220472441,
+                "x": 0.0,
+                "y": 0.0
+              }
+            ],
+            "colorMode": "Rgb",
+            "currentLayer": 3,
+            "dirty": false,
+            "history": [],
+            "isolation": null,
+            "layerRows": [],
+            "layers": [
+              {
+                "bounds": {
+                  "height": 481.8897637795276,
+                  "width": 4110.236220472441,
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "children": [
+                  {
+                    "anchors": 12,
+                    "bounds": {
+                      "height": 481.8897637795276,
+                      "width": 4110.236220472441,
+                      "x": 0.0,
+                      "y": 0.0
+                    },
+                    "closed": true,
+                    "fill": "None",
+                    "id": 2,
+                    "kind": "Path",
+                    "locked": false,
+                    "name": "<Path>",
+                    "stroke": "#000000",
+                    "strokeOptions": {
+                      "align": "center",
+                      "alignDashes": false,
+                      "arrowAlign": "extend",
+                      "cap": "butt",
+                      "dash": null,
+                      "dashOffset": 0.0,
+                      "endArrow": null,
+                      "gradientMode": "within",
+                      "join": "miter",
+                      "miterLimit": 10.0,
+                      "profile": "uniform",
+                      "startArrow": null,
+                      "widthPoints": null
+                    },
+                    "strokeWidth": 0.510236220472441,
+                    "visible": true
+                  }
+                ],
+                "clip": false,
+                "color": "#4f80ff",
+                "dimImages": null,
+                "id": 3,
+                "kind": "Layer",
+                "locked": false,
+                "name": "Layer 1",
+                "preview": true,
+                "printable": true,
+                "template": false,
+                "visible": true
+              }
+            ],
+            "objects": 2,
+            "paint": {
+              "appearanceItem": null,
+              "fill": "None",
+              "fillActive": false,
+              "stroke": "#000000",
+              "strokeWidth": 0.5
+            },
+            "pasteRemembersLayers": false,
+            "path": null,
+            "redo": [],
+            "revision": 1,
+            "selection": [],
+            "selectionBounds": null,
+            "selectionRotation": 0.0,
+            "target": null,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW.dxf",
+            "tool": "selection",
+            "units": "Millimeters"
+          },
+          "geometryOk": true,
+          "geometry": "S01_long-shelf_1450x170mm_revA_REVIEW.dxf: DXF units=mm polylines=1 open=0"
+        },
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg": {
+          "exists": true,
+          "reopens": true,
+          "open": {
+            "format": "svg",
+            "index": 5,
+            "missingLinks": [],
+            "modifiedLinks": [],
+            "restored": false,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+            "updatedLinks": [],
+            "warnings": []
+          },
+          "document": {
+            "artboards": [
+              {
+                "height": 481.88978576660156,
+                "name": "Artboard 1",
+                "width": 4110.2362060546875,
+                "x": 0.0,
+                "y": 0.0
+              }
+            ],
+            "colorMode": "Rgb",
+            "currentLayer": 3,
+            "dirty": false,
+            "history": [],
+            "isolation": null,
+            "layerRows": [],
+            "layers": [
+              {
+                "bounds": {
+                  "height": 481.88978560416945,
+                  "width": 4110.2363168331285,
+                  "x": 0.0,
+                  "y": 0.0
+                },
+                "children": [
+                  {
+                    "anchors": 12,
+                    "bounds": {
+                      "height": 481.88978560416945,
+                      "width": 4110.2363168331285,
+                      "x": 0.0,
+                      "y": 0.0
+                    },
+                    "closed": true,
+                    "fill": "None",
+                    "id": 2,
+                    "kind": "Path",
+                    "locked": false,
+                    "name": "<Path>",
+                    "stroke": "#000000",
+                    "strokeOptions": {
+                      "align": "center",
+                      "alignDashes": false,
+                      "arrowAlign": "extend",
+                      "cap": "butt",
+                      "dash": null,
+                      "dashOffset": 0.0,
+                      "endArrow": null,
+                      "gradientMode": "within",
+                      "join": "miter",
+                      "miterLimit": 10.0,
+                      "profile": "uniform",
+                      "startArrow": null,
+                      "widthPoints": null
+                    },
+                    "strokeWidth": 0.4999999101862572,
+                    "visible": true
+                  }
+                ],
+                "clip": false,
+                "color": "#4f80ff",
+                "dimImages": null,
+                "id": 3,
+                "kind": "Layer",
+                "locked": false,
+                "name": "Layer 1",
+                "preview": true,
+                "printable": true,
+                "template": false,
+                "visible": true
+              }
+            ],
+            "objects": 2,
+            "paint": {
+              "appearanceItem": null,
+              "fill": "None",
+              "fillActive": false,
+              "stroke": "#000000",
+              "strokeWidth": 0.5
+            },
+            "pasteRemembersLayers": false,
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+            "redo": [],
+            "revision": 1,
+            "selection": [],
+            "selectionBounds": null,
+            "selectionRotation": 0.0,
+            "target": null,
+            "title": "S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+            "tool": "selection",
+            "units": "Millimeters"
+          },
+          "geometryOk": true,
+          "geometry": "S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg: SVG width=1450mm height=170mm unit=mm viewBox=0 0 1450 170\n  shapes=1 open=0"
+        }
+      },
+      "outputs": {
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft": "b38ce268a6763b0226a9cf4260febdf446024dcfd6c48d70391a17e466cafa5d",
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg": "1ad89474d59ab6c119b9425cce2b15b5cb1021a86b5489cd845a42449e086a1e",
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW.dxf": "8a5d55625e1339e936d4f659d1dec7169863fd2bf7b4d253bab73e6a6e27e7f0",
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg": "7b01149170af6adf8c3cce6cb9c10368a07fcab253cd4f0ace24c21f93fea72b"
+      },
+      "finished": "2026-10-12T19:29:04+08:00",
+      "durationSeconds": 0.145075
+    },
+    {
+      "node": "poster",
+      "app": "photocraft",
+      "transport": "official-mcp",
+      "version": "0.7.0",
+      "cliSha256": "31ce1ee017b76f3b0f97c6166dcb60e8607189b3f123be64f8cf93c2e42f7f2d",
+      "key": "3e0419a2a3614ebeb0d273e5956604c36fbd24b48e617e5b24c17b1c64512da9",
+      "revision": "A",
+      "inputs": {
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg": "7b01149170af6adf8c3cce6cb9c10368a07fcab253cd4f0ace24c21f93fea72b"
+      },
+      "started": "2026-10-12T19:29:20+08:00",
+      "status": "ok",
+      "log": [
+        {
+          "tool": "doc_open",
+          "arguments": {
+            "path": "<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg"
+          },
+          "result": {
+            "height": 643,
+            "index": 0,
+            "layers": 1,
+            "name": "S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+            "warnings": [],
+            "width": 5480
+          }
+        },
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "image.imageSize",
+            "params": {
+              "width": 2000,
+              "height": 234,
+              "resample": "bicubic"
+            }
+          },
+          "result": {
+            "height": 234,
+            "width": 2000
+          }
+        },
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "image.canvasSize",
+            "params": {
+              "width": 2000,
+              "height": 800,
+              "anchor": "center",
+              "extensionColor": "white"
+            }
+          },
+          "result": {
+            "height": 800,
+            "offset": [
+              0,
+              283
+            ],
+            "width": 2000
+          }
+        },
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "layer.newFillLayer.solidColor",
+            "params": {
+              "color": "#ffffff"
+            }
+          },
+          "result": {
+            "layer": 3
+          }
+        },
+        {
+          "tool": "command_run",
+          "arguments": {
+            "id": "layer.arrange.sendToBack",
+            "params": {}
+          },
+          "result": null
+        },
+        {
+          "tool": "doc_save",
+          "arguments": {
+            "path": "<project>/out/S01_poster_revA_REVIEW.pcraft"
+          },
+          "result": {
+            "path": "<project>/out/S01_poster_revA_REVIEW.pcraft",
+            "warnings": []
+          }
+        },
+        {
+          "tool": "doc_save",
+          "arguments": {
+            "path": "<project>/out/S01_poster_revA_REVIEW.png"
+          },
+          "result": {
+            "path": "<project>/out/S01_poster_revA_REVIEW.png",
+            "warnings": [
+              "2 layer(s) flattened; layers, masks and blend modes are not kept"
+            ]
+          }
+        },
+        {
+          "tool": "doc_open",
+          "arguments": {
+            "path": "<project>/out/S01_poster_revA_REVIEW.pcraft"
+          },
+          "result": {
+            "height": 800,
+            "index": 1,
+            "layers": 2,
+            "name": "S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+            "warnings": [],
+            "width": 2000
+          }
+        },
+        {
+          "tool": "doc_inspect",
+          "arguments": {},
+          "result": {
+            "activeLayer": 2,
+            "canRedo": false,
+            "canUndo": false,
+            "channels": {
+              "alpha": [],
+              "colors": [
+                {
+                  "name": "Red",
+                  "visible": true
+                },
+                {
+                  "name": "Green",
+                  "visible": true
+                },
+                {
+                  "name": "Blue",
+                  "visible": true
+                }
+              ],
+              "composite": "RGB",
+              "compositeVisible": true,
+              "layerMaskView": null,
+              "quickMask": null,
+              "target": {
+                "kind": "composite"
+              }
+            },
+            "depth": 8,
+            "hasSelection": false,
+            "height": 800,
+            "history": [
+              "Open"
+            ],
+            "isolatedLayers": [],
+            "lastAppliedComp": null,
+            "layerComps": [],
+            "layerMaskView": null,
+            "layers": [
+              {
+                "blend": "Normal",
+                "bounds": [
+                  0,
+                  282,
+                  2000,
+                  236
+                ],
+                "clipped": false,
+                "fill": 1.0,
+                "hasMask": false,
+                "id": 2,
+                "kind": "Shape",
+                "labelColor": "none",
+                "linkGroup": null,
+                "name": "Layer_1",
+                "opacity": 1.0,
+                "selected": true,
+                "visible": true
+              },
+              {
+                "blend": "Normal",
+                "bounds": null,
+                "clipped": false,
+                "fill": 1.0,
+                "hasMask": true,
+                "id": 3,
+                "kind": "Fill",
+                "labelColor": "none",
+                "linkGroup": null,
+                "name": "Color Fill 1",
+                "opacity": 1.0,
+                "selected": false,
+                "visible": true
+              }
+            ],
+            "measurement": {
+              "count": 0,
+              "countGroups": 0,
+              "ruler": null,
+              "scale": "1 pixels = 1.0000 pixels"
+            },
+            "mode": "Rgb",
+            "name": "S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+            "notes": [],
+            "quickMask": false,
+            "resolution": 72.0,
+            "revision": 1,
+            "selectedLayers": [
+              2
+            ],
+            "selectionBounds": null,
+            "symmetry": null,
+            "timeline": null,
+            "variables": null,
+            "width": 2000
+          }
+        },
+        {
+          "tool": "doc_open",
+          "arguments": {
+            "path": "<project>/out/S01_poster_revA_REVIEW.png"
+          },
+          "result": {
+            "height": 800,
+            "index": 2,
+            "layers": 1,
+            "name": "S01_poster_revA_REVIEW.png",
+            "warnings": [],
+            "width": 2000
+          }
+        },
+        {
+          "tool": "doc_inspect",
+          "arguments": {},
+          "result": {
+            "activeLayer": 7,
+            "canRedo": false,
+            "canUndo": false,
+            "channels": {
+              "alpha": [],
+              "colors": [
+                {
+                  "name": "Red",
+                  "visible": true
+                },
+                {
+                  "name": "Green",
+                  "visible": true
+                },
+                {
+                  "name": "Blue",
+                  "visible": true
+                }
+              ],
+              "composite": "RGB",
+              "compositeVisible": true,
+              "layerMaskView": null,
+              "quickMask": null,
+              "target": {
+                "kind": "composite"
+              }
+            },
+            "depth": 8,
+            "hasSelection": false,
+            "height": 800,
+            "history": [
+              "Open"
+            ],
+            "isolatedLayers": [],
+            "lastAppliedComp": null,
+            "layerComps": [],
+            "layerMaskView": null,
+            "layers": [
+              {
+                "blend": "Normal",
+                "bounds": [
+                  0,
+                  0,
+                  2000,
+                  800
+                ],
+                "clipped": false,
+                "fill": 1.0,
+                "hasMask": false,
+                "id": 7,
+                "kind": "Pixel",
+                "labelColor": "none",
+                "linkGroup": null,
+                "name": "Background",
+                "opacity": 1.0,
+                "selected": true,
+                "visible": true
+              }
+            ],
+            "measurement": {
+              "count": 0,
+              "countGroups": 0,
+              "ruler": null,
+              "scale": "1 pixels = 1.0000 pixels"
+            },
+            "mode": "Rgb",
+            "name": "S01_poster_revA_REVIEW.png",
+            "notes": [],
+            "quickMask": false,
+            "resolution": 72.00900268554688,
+            "revision": 1,
+            "selectedLayers": [
+              7
+            ],
+            "selectionBounds": null,
+            "symmetry": null,
+            "timeline": null,
+            "variables": null,
+            "width": 2000
+          }
+        }
+      ],
+      "checks": {
+        "out/S01_poster_revA_REVIEW.pcraft": {
+          "exists": true,
+          "reopens": true,
+          "open": {
+            "height": 800,
+            "index": 1,
+            "layers": 2,
+            "name": "S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+            "warnings": [],
+            "width": 2000
+          },
+          "document": {
+            "activeLayer": 2,
+            "canRedo": false,
+            "canUndo": false,
+            "channels": {
+              "alpha": [],
+              "colors": [
+                {
+                  "name": "Red",
+                  "visible": true
+                },
+                {
+                  "name": "Green",
+                  "visible": true
+                },
+                {
+                  "name": "Blue",
+                  "visible": true
+                }
+              ],
+              "composite": "RGB",
+              "compositeVisible": true,
+              "layerMaskView": null,
+              "quickMask": null,
+              "target": {
+                "kind": "composite"
+              }
+            },
+            "depth": 8,
+            "hasSelection": false,
+            "height": 800,
+            "history": [
+              "Open"
+            ],
+            "isolatedLayers": [],
+            "lastAppliedComp": null,
+            "layerComps": [],
+            "layerMaskView": null,
+            "layers": [
+              {
+                "blend": "Normal",
+                "bounds": [
+                  0,
+                  282,
+                  2000,
+                  236
+                ],
+                "clipped": false,
+                "fill": 1.0,
+                "hasMask": false,
+                "id": 2,
+                "kind": "Shape",
+                "labelColor": "none",
+                "linkGroup": null,
+                "name": "Layer_1",
+                "opacity": 1.0,
+                "selected": true,
+                "visible": true
+              },
+              {
+                "blend": "Normal",
+                "bounds": null,
+                "clipped": false,
+                "fill": 1.0,
+                "hasMask": true,
+                "id": 3,
+                "kind": "Fill",
+                "labelColor": "none",
+                "linkGroup": null,
+                "name": "Color Fill 1",
+                "opacity": 1.0,
+                "selected": false,
+                "visible": true
+              }
+            ],
+            "measurement": {
+              "count": 0,
+              "countGroups": 0,
+              "ruler": null,
+              "scale": "1 pixels = 1.0000 pixels"
+            },
+            "mode": "Rgb",
+            "name": "S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+            "notes": [],
+            "quickMask": false,
+            "resolution": 72.0,
+            "revision": 1,
+            "selectedLayers": [
+              2
+            ],
+            "selectionBounds": null,
+            "symmetry": null,
+            "timeline": null,
+            "variables": null,
+            "width": 2000
+          }
+        },
+        "out/S01_poster_revA_REVIEW.png": {
+          "exists": true,
+          "reopens": true,
+          "open": {
+            "height": 800,
+            "index": 2,
+            "layers": 1,
+            "name": "S01_poster_revA_REVIEW.png",
+            "warnings": [],
+            "width": 2000
+          },
+          "document": {
+            "activeLayer": 7,
+            "canRedo": false,
+            "canUndo": false,
+            "channels": {
+              "alpha": [],
+              "colors": [
+                {
+                  "name": "Red",
+                  "visible": true
+                },
+                {
+                  "name": "Green",
+                  "visible": true
+                },
+                {
+                  "name": "Blue",
+                  "visible": true
+                }
+              ],
+              "composite": "RGB",
+              "compositeVisible": true,
+              "layerMaskView": null,
+              "quickMask": null,
+              "target": {
+                "kind": "composite"
+              }
+            },
+            "depth": 8,
+            "hasSelection": false,
+            "height": 800,
+            "history": [
+              "Open"
+            ],
+            "isolatedLayers": [],
+            "lastAppliedComp": null,
+            "layerComps": [],
+            "layerMaskView": null,
+            "layers": [
+              {
+                "blend": "Normal",
+                "bounds": [
+                  0,
+                  0,
+                  2000,
+                  800
+                ],
+                "clipped": false,
+                "fill": 1.0,
+                "hasMask": false,
+                "id": 7,
+                "kind": "Pixel",
+                "labelColor": "none",
+                "linkGroup": null,
+                "name": "Background",
+                "opacity": 1.0,
+                "selected": true,
+                "visible": true
+              }
+            ],
+            "measurement": {
+              "count": 0,
+              "countGroups": 0,
+              "ruler": null,
+              "scale": "1 pixels = 1.0000 pixels"
+            },
+            "mode": "Rgb",
+            "name": "S01_poster_revA_REVIEW.png",
+            "notes": [],
+            "quickMask": false,
+            "resolution": 72.00900268554688,
+            "revision": 1,
+            "selectedLayers": [
+              7
+            ],
+            "selectionBounds": null,
+            "symmetry": null,
+            "timeline": null,
+            "variables": null,
+            "width": 2000
+          }
+        }
+      },
+      "outputs": {
+        "out/S01_poster_revA_REVIEW.pcraft": "69041100956161fa681efe61622a69e0b74acf996ca203cd3eed6788366fc822",
+        "out/S01_poster_revA_REVIEW.png": "8385615d375a3c2e54e0040815a56b93196e782e2135c62ec249e5603ea724a3"
+      },
+      "finished": "2026-10-12T19:29:20+08:00",
+      "durationSeconds": 0.199399
+    }
+  ]
+}

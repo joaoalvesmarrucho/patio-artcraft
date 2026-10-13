@@ -1,0 +1,165 @@
+{
+  "plan": "S01 long shelf outline and presentation preview",
+  "revision": "A",
+  "budget": {
+    "secondsPerNode": 120,
+    "secondsTotal": 300,
+    "attemptsPerNode": 2
+  },
+  "nodes": [
+    {
+      "id": "outline",
+      "app": "vectorcraft",
+      "inputs": [],
+      "steps": [
+        {
+          "cmd": "file.new",
+          "params": {
+            "name": "S01 Long shelf REVIEW",
+            "width": "1450 mm",
+            "height": "170 mm",
+            "units": "Millimeters",
+            "backgroundContents": "white",
+            "artboards": 1
+          }
+        },
+        {
+          "cmd": "shape.rectangle",
+          "params": {
+            "x": 0,
+            "y": 0,
+            "width": 4110.236220472441,
+            "height": 481.8897637795276
+          }
+        },
+        {
+          "cmd": "shape.rectangle",
+          "params": {
+            "x": 578.2677165354331,
+            "y": 0,
+            "width": 85.03937007874016,
+            "height": 85.03937007874016
+          }
+        },
+        {
+          "cmd": "shape.rectangle",
+          "params": {
+            "x": 969.4488188976379,
+            "y": 0,
+            "width": 85.03937007874016,
+            "height": 85.03937007874016
+          }
+        },
+        {
+          "cmd": "select.all",
+          "params": {}
+        },
+        {
+          "cmd": "object.pathfinder.minusFront",
+          "params": {}
+        },
+        {
+          "cmd": "paint.setFill",
+          "params": {
+            "none": true
+          }
+        },
+        {
+          "cmd": "paint.setStroke",
+          "params": {
+            "color": "#000000"
+          }
+        },
+        {
+          "cmd": "stroke.set",
+          "params": {
+            "weight": 0.5
+          }
+        }
+      ],
+      "exports": [
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft",
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg",
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW.dxf"
+      ],
+      "exportOptions": {
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg": {
+          "decimals": 3,
+          "responsive": false,
+          "useArtboards": true
+        },
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW.dxf": {
+          "unit": "Millimeters",
+          "scale": 1,
+          "version": "2013",
+          "useArtboards": true
+        }
+      },
+      "normalizeSvg": [
+        {
+          "source": "out/S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg",
+          "target": "out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+          "widthMm": 1450,
+          "heightMm": 170
+        }
+      ],
+      "geometryFiles": [
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW.dxf"
+      ],
+      "outputs": [
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW.vectorcraft",
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg",
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW.dxf",
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg"
+      ],
+      "note": "Pinned catalogue commands; numeric shape coordinates are points (mm \u00d7 72/25.4). Minus Front subtracts both 30 \u00d7 30 mm top-edge notches, starting at 204 and 342 mm. Raw SVG retained; a separate normalized copy has millimetre dimensions and viewBox."
+    },
+    {
+      "id": "poster",
+      "app": "photocraft",
+      "inputs": [
+        "out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg"
+      ],
+      "open": "out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg",
+      "steps": [
+        {
+          "cmd": "image.imageSize",
+          "params": {
+            "width": 2000,
+            "height": 234,
+            "resample": "bicubic"
+          }
+        },
+        {
+          "cmd": "image.canvasSize",
+          "params": {
+            "width": 2000,
+            "height": 800,
+            "anchor": "center",
+            "extensionColor": "white"
+          }
+        },
+        {
+          "cmd": "layer.newFillLayer.solidColor",
+          "params": {
+            "color": "#ffffff"
+          }
+        },
+        {
+          "cmd": "layer.arrange.sendToBack",
+          "params": {}
+        }
+      ],
+      "exports": [
+        "out/S01_poster_revA_REVIEW.pcraft",
+        "out/S01_poster_revA_REVIEW.png"
+      ],
+      "outputs": [
+        "out/S01_poster_revA_REVIEW.pcraft",
+        "out/S01_poster_revA_REVIEW.png"
+      ],
+      "note": "PhotoCraft 0.7.0 rasterizes the SVG for a 2000 \u00d7 800 pixel presentation preview. This PNG is not a cutting file; native shelf geometry stays in VectorCraft."
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "schema": "patio-runtime-verification/v1",
+  "date": "2026-10-12",
+  "platform": "macOS arm64",
+  "route": "pinned official stdio MCP",
+  "checks": {
+    "vectorcraft_run_--automation-read-root": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "vectorcraft-cli: unknown run option `--automation-read-root`"
+    },
+    "vectorcraft_run_--automation-write-root": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "vectorcraft-cli: unknown run option `--automation-write-root`"
+    },
+    "vectorcraft_info_exists": {
+      "returncode": 0,
+      "stdout": "{\n  \"artboards\": [\n    {\n      \"name\": \"Artboard 1\",\n      \"rect\": [\n        0.0,\n        0.0,\n        4110.2362060546875,\n        481.88978576660156\n      ]\n    }\n  ],\n  \"file\": \"<project>/out/S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg\",\n  \"fonts\": [],\n  \"info\": {\n    \"artboards\": 1,\n    \"author\": \"\",\n    \"authorTitle\": \"\",\n    \"colorMode\": \"rgb\",\n    \"copyrightNotice\": \"\",\n    \"copyrightStatus\": \"unknown\",\n    \"copyrightUrl\": \"\",\n    \"created\": null,\n    \"description\": \"\",\n    \"keywords\": [],\n    \"modified\": null,\n    \"objects\": 2,\n    \"rating\": 0,\n    \"title\": \"S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg\",\n    \"units\": \"Millimeters\"\n  },\n  \"kinds\": {\n    \"Layer\": 1,\n    \"Path\": 1\n  },\n  \"warnings\": []\n}",
+      "stderr": ""
+    },
+    "vectorcraft_mcp_roots": {
+      "outside_read": {
+        "refused": true,
+        "error": "open_file: automation path rejected: outside the read root <project>: <verification>/outside-source.svg"
+      },
+      "outside_write": {
+        "refused": true,
+        "error": "export: automation path rejected: outside the write root <project>/out: <project>/vectorcraft-outside-write.png"
+      },
+      "sentinelUnchanged": true
+    },
+    "photocraft_mcp_roots": {
+      "outside_read": {
+        "refused": true,
+        "error": "automation path rejected: absolute paths must be inside the automation root: `<verification>/outside-source.svg`"
+      },
+      "outside_write": {
+        "refused": true,
+        "error": "automation path rejected: absolute paths must be inside the automation root: `<project>/photocraft-outside-write.png`"
+      },
+      "sentinelUnchanged": true
+    },
+    "serve_writes_config": {
+      "status": "pass",
+      "startsServer": false,
+      "config": {
+        "mcpServers": {
+          "patio-vectorcraft": {
+            "command": "<patio-tool-home>/vectorcraft/0.9.0/vectorcraft-cli",
+            "args": [
+              "mcp",
+              "--automation-read-root",
+              "<project>",
+              "--automation-write-root",
+              "<project>/out"
+            ]
+          }
+        }
+      }
+    },
+    "setup_check": {
+      "returncode": 0,
+      "stdout": "patio-vectorcraft setup check\n  pin: VectorCraft 0.9.0 (vectorcraft-cli-0.9.0-macos-universal.zip)\n  read root : <project>\n  write root: <project>/out\nREADY. Start the server with:\n  \"<patio-tool-home>/vectorcraft/0.9.0/vectorcraft-cli\" mcp --automation-read-root \"<project>\" --automation-write-root \"<project>/out\"",
+      "stderr": ""
+    },
+    "resume_unchanged": {
+      "returncode": 0,
+      "stdout": "[outline] unchanged, skipped\n[poster] unchanged, skipped\ndone; ledger: <project>/out/ledger.json",
+      "stderr": ""
+    },
+    "selective_rebuild": {
+      "returncode": 0,
+      "stdout": "[outline] unchanged, skipped\n[poster] photocraft MCP with project read root and out/ write root\n[poster] ok; 2 outputs reopened\ndone; ledger: <project>/out/ledger.json",
+      "stderr": ""
+    },
+    "restored_original_plan": {
+      "returncode": 0,
+      "stdout": "[outline] unchanged, skipped\n[poster] photocraft MCP with project read root and out/ write root\n[poster] ok; 2 outputs reopened\ndone; ledger: <project>/out/ledger.json",
+      "stderr": ""
+    },
+    "path_../outside.svg": {
+      "refused": true,
+      "error": "not a project-relative path: ../outside.svg"
+    },
+    "path_out/escape/not-written.svg": {
+      "refused": true,
+      "error": "link in project path: out/escape/not-written.svg"
+    },
+    "vectorcraft_install": {
+      "version": "vectorcraft-cli 0.9.0",
+      "cliSha256": "858ff14a56a30985e3a59e258460acd6611c1bf1baeb9b2a6b7e3a5872bb2d79",
+      "assetSha256": "0e6fc38dd1ec432fb4a133ee1b1efe935d739f0fcb376b1925ee89473d55a61b",
+      "assetUrl": "https://github.com/storytold/vectorcraft/releases/download/v0.9.0/vectorcraft-cli-0.9.0-macos-universal.zip"
+    },
+    "photocraft_install": {
+      "version": "photocraft-cli 0.7.0 (792616159, 2026-10-11)",
+      "cliSha256": "31ce1ee017b76f3b0f97c6166dcb60e8607189b3f123be64f8cf93c2e42f7f2d",
+      "assetSha256": "caf41eee1827ef740bc4495fb1fee77f6a4e0be82fb131106ad06cd591fd8091",
+      "assetUrl": "https://github.com/storytold/photocraft/releases/download/v0.7.0/photocraft-cli-0.7.0-macos-universal.zip"
+    },
+    "effectcraft_install": {
+      "version": "effectcraft-cli 0.8.0",
+      "cliSha256": "0400a498d7df3304cac0b466452568c4da0e03bee858fb9aa189392e39986db3",
+      "assetSha256": "a8b133b53f29c967690295cd6652dc894257b132424ee68b680bd09908aa3553",
+      "assetUrl": "https://github.com/storytold/effectcraft/releases/download/v0.8.0/effectcraft-cli-0.8.0-macos-universal.zip"
+    },
+    "bring_source_parent_symlink": {
+      "refused": true,
+      "error": "link in project path: sources/input.txt"
+    },
+    "bring_dangling_destination": {
+      "refused": true,
+      "error": "link in project path: sources/input.txt"
+    },
+    "bring_record_symlink": {
+      "refused": true,
+      "error": "link in project path: project-record.json"
+    },
+    "serve_out_symlink": {
+      "refused": true,
+      "error": "link in project path: out"
+    },
+    "serve_config_symlink": {
+      "refused": true,
+      "error": "link in project path: .mcp.json"
+    },
+    "new_project_root-link": {
+      "refused": true,
+      "error": "project folder must not be a symbolic link"
+    },
+    "new_project_root-dangling": {
+      "refused": true,
+      "error": "project folder must not be a symbolic link"
+    },
+    "watch_not_implied": {
+      "refused": true,
+      "error": "--watch is not verified by CLI-only setup. Use the confined headless MCP configuration; a desktop connection needs a separately verified app launch and its own roots."
+    },
+    "s01_svg_notches": {
+      "corners": 12,
+      "closed": true,
+      "expectedCoordinatesMm": [
+        [
+          0,
+          0
+        ],
+        [
+          204,
+          0
+        ],
+        [
+          204,
+          30
+        ],
+        [
+          234,
+          30
+        ],
+        [
+          234,
+          0
+        ],
+        [
+          342,
+          0
+        ],
+        [
+          342,
+          30
+        ],
+        [
+          372,
+          30
+        ],
+        [
+          372,
+          0
+        ],
+        [
+          1450,
+          0
+        ],
+        [
+          1450,
+          170
+        ],
+        [
+          0,
+          170
+        ]
+      ],
+      "maxCornerDeviationMm": 0.00018278159279696237,
+      "rawSha256": "1ad89474d59ab6c119b9425cce2b15b5cb1021a86b5489cd845a42449e086a1e"
+    },
+    "s01_dxf_notches": {
+      "corners": 12,
+      "closed": true,
+      "maxCornerDeviationMm": 0.0,
+      "sha256": "8a5d55625e1339e936d4f659d1dec7169863fd2bf7b4d253bab73e6a6e27e7f0"
+    },
+    "checker_.svg_raw": {
+      "expectedPass": false,
+      "returncode": 1,
+      "stdout": "S01_long-shelf_1450x170mm_revA_REVIEW_raw.svg: SVG width=4110.236 height=481.89 unit=(user units) viewBox=0 0 4110.236 481.89\n  shapes=1 open=0\n  not a Patio mm delivery: both width and height must use mm; preserve the raw export and check the normalized copy"
+    },
+    "checker_.svg": {
+      "expectedPass": true,
+      "returncode": 0,
+      "stdout": "S01_long-shelf_1450x170mm_revA_REVIEW_1to1mm.svg: SVG width=1450mm height=170mm unit=mm viewBox=0 0 1450 170\n  shapes=1 open=0"
+    },
+    "checker_.dxf": {
+      "expectedPass": true,
+      "returncode": 0,
+      "stdout": "S01_long-shelf_1450x170mm_revA_REVIEW.dxf: DXF units=mm polylines=1 open=0"
+    },
+    "guard_sentinel_unchanged": true,
+    "sample_ledger_sanitized": {
+      "pass": true,
+      "privateAbsolutePathsFound": false
+    },
+    "skill_creator_validation": {
+      "pass": true,
+      "result": "Skill is valid!"
+    },
+    "poster_preview": {
+      "visuallyInspected": true,
+      "sizePixels": [
+        2000,
+        800
+      ],
+      "whiteBackground": true,
+      "role": "raster presentation preview, not a cutting file"
+    },
+    "setup_hash_mismatch_never_executes": {
+      "fakeCliControlWroteSentinel": true,
+      "hashMismatchRejected": true,
+      "fakeCliExecutedByChecker": false,
+      "sentinelAbsentAfterCheck": true,
+      "mismatchExitCode": 1,
+      "matchedOfficialCliReady": true,
+      "scope": "Focused hash-gate test only; full pipeline not rerun."
+    }
+  },
+  "limitations": [
+    "Agent-supplied file paths are confined by the application; this is not an OS sandbox.",
+    "Application-managed settings, recovery data, fonts and libraries are outside the claimed job-file boundary.",
+    "Check/open races and malicious local processes were not assessed.",
+    "EffectCraft was archive/binary hash checked and version checked; no EffectCraft drawing or MCP confinement runtime test was performed.",
+    "Watched desktop launch is deliberately unavailable through CLI-only setup; --watch fails with an explanatory message.",
+    "Use a full repository checkout: standalone skill-folder packaging has not been validated."
+  ],
+  "filesModifiedForVerification": [
+    "tools/patio_artcraft.py",
+    "tools/pipeline.py",
+    "tools/mcp_session.py",
+    "pins/photocraft.lock.json",
+    "pins/effectcraft.lock.json",
+    "examples/shelf-and-poster.plan.json",
+    "skills/patio-vectorcraft/SKILL.md",
+    "skills/patio-vectorcraft/scripts/check_setup.py",
+    "skills/patio-vectorcraft/scripts/check_export.py",
+    "skills/patio-vectorcraft/references/commands-0.9.0.json",
+    "skills/patio-vectorcraft/references/export-presets.md",
+    "README.md",
+    "docs/pipeline.md",
+    "CHANGELOG.md",
+    "docs/rules.md"
+  ],
+  "releaseStatus": "Untagged local draft; no external repository publication or skill installation into an agent registry performed.",
+  "initialDraftFailures": [
+    "VectorCraft run rejects both automation-root flags; draft pipeline did not pass either root.",
+    "shape.rect is not a VectorCraft 0.9.0 command; shape.rectangle and object.pathfinder.minusFront are supported.",
+    "Numeric drawing sizes are points, not millimetres; original 1450/170 numeric parameters used the wrong scale.",
+    "PhotoCraft batch-run options differ from VectorCraft; the shared draft run adapter was incorrect.",
+    "image.resize is not the PhotoCraft 0.7.0 command; image.imageSize is supported.",
+    "No documented VectorCraft SVG option sets physical mm root dimensions; preserve raw export and normalize a separate copy.",
+    "Python on this Mac initially failed TLS trust for the VectorCraft download; verified-TLS macOS curl fallback succeeded before archive hash verification.",
+    "PhotoCraft --version adds commit/date after its version number; exact token matching was corrected.",
+    "Resolved-path checks hid symlinks; wrapper and pipeline now reject lexical links, including dangling links.",
+    "CLI-only setup does not install a desktop application for --watch; the unverified mode now fails explicitly.",
+    "The setup checker recorded a binary hash mismatch but still requested --version; the version subprocess is now reachable only after a matching recorded hash."
+  ]
+}
